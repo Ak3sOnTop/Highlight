@@ -30,7 +30,7 @@ end
 game:GetService("RunService").Heartbeat:Connect(function()
     if getgenv().enabled then
         task.wait()
-        for _,v in pairs(game.Workplace:GetChildren()) do
+        for _,v in pairs(game.Workspace:GetChildren()) do
             if v:FindFirstChild("Model") and v:FindFirstChild("Head") then
                 local esp = holder:FindFirstChild(v.Name) or Instance.new("Highlight")
                 esp.Name = v.Name
